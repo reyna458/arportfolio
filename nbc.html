@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <meta name="keywords" content="Data viz, data graphics, NBC News, NBC News Digital, graphic design, graphs, graphic, journalism">
+        <meta name="description" content="A collection of several charts and maps created in my time as an intern for NBC News Data Graphics team.">
+        <title>Ash Reynolds / NBC News</title>
+
+        <link rel="stylesheet" href="styles/global.css">
+        <link rel="stylesheet" href="styles/nbc.css"> 
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
+    </head>
+    <body>
+        <header id="top-header">
+            <a href="index.html" id="logo" tabindex="1"><img src="images/ar-bug.png" alt="AR logo"></a>
+            <a href="index.html" id="title" tabindex="2">Ash Reynolds Portfolio</a>
+        </header>
+
+        <nav id="main-nav">
+            <menu id="topmenu">
+                <li><a href="resume.html" tabindex="3">RESUME</a></li>
+                <li><a href="nbc.html" tabindex="4">CURRENT WORK</a></li>
+                <li class="proj-button" tabindex="5">
+                    <input type="checkbox" id="checkbox"><label for="checkbox">PROJECTS</label>
+                    <ul class="dropdown"> <!-- Ash Note: The projects button is now going to open a menu to my different projects -->
+                        <li><a href="nbc.html"><img src="images/nbcbutton.jpg" alt="NBC rainbow peacock logo with text that reads NBC News"></a></li>
+                        <li><a href="nsfp.html"><img src="images/nsfplogo.jpg" alt="white text on a black background that reads NSFP"></a></li>
+                        <li><a href="jd.html"><img src="images/jdbutton.jpg" alt="White text on a pink background that says Journalism + Design"></a></li>
+                        <li><a href="misc.html"><img src="images/misc-squareicon.jpg" alt="A paper airplane flying with a rainbow trail behind it over a dark blue background with the word Miscellaneous in curvey letters"></a></li>
+                        <li> <a href="publications.html"><img src="images/publications.png" alt="Document icon"></a></li>
+                        <li><a href="gallery.html"><img src="images/gallery.png" alt="Icon of two photos"></a></li>
+                    </ul>
+                </li>
+            </menu>
+        </nav>
+
+
+        <main>
+            <header class="explanation" id="nbcexp">
+                <a href="nbc.html"><img src="images/nbcbutton.jpg" alt="NBC rainbow peacock logo with text that reads NBC News"></a>
+                <h1>Data Graphics Intern - NBC News</h1>
+                <p>In September 2024 I began interning for the NBC News Data Graphics Team. Assembled here is a collection of just some of my published charts and maps! Click around to explore!</p>
+            </header>
+
+            <section id="campaignstops">
+                <div id="mapshead">
+                    <a href="https://www.nbcnews.com/politics/2024-election/trump-harris-running-mates-are-dividing-time-7-decisive-swing-states-rcna176870" target="_blank"><h2>How Trump, Harris and their running mates are dividing their time among the 7 decisive swing states</h2></a>
+                    <p>One of my first projects for my internship was this story highlighting the campaign stops of each member of the 2024 Presidential Election in each of the seven swing states. This took me... forever so please feel free to click around! See if they visited your town!</p>
+                </div>
+                <div class="data-wrapper-code" id="dwc1">
+                    <!-- Maps embedded pasted from Datawrapper export (not my own code) -->
+                    <iframe title="Georgia campaign stops" aria-label="Map" id="datawrapper-chart-WP3Cu" src="https://datawrapper.dwcdn.net/WP3Cu/12/" style="width: 0; min-width: 75% !important; border: none;" height="818" data-external="1"></iframe><script>!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
+                </script>
+                </div>
+                <div class="data-wrapper-code" id="dwc2">
+                    <iframe title="Michigan campaign stops" aria-label="Map" id="datawrapper-chart-1ojlu" src="https://datawrapper.dwcdn.net/1ojlu/10/" style="width: 0; min-width: 75% !important; border: none;" height="818" data-external="1"></iframe><script>!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
+                </script>
+                </div>
+                <div class="data-wrapper-code" id="dwc3">
+                    <iframe title="Wisconsin campaign stops" aria-label="Map" id="datawrapper-chart-ttBAh" src="https://datawrapper.dwcdn.net/ttBAh/5/" style="width: 0; min-width: 75% !important; border: none;" height="818" data-external="1"></iframe><script>!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
+                </script>
+                </div>
+                <!-- End of datawrapper code -->
+            </section>
+
+            <section id="charts">
+
+                <h2>Charts</h2>
+
+                <div class="debatetopics">
+                    <a href="https://www.nbcnews.com/politics/2024-election/live-blog/vice-presidential-debate-vance-walz-live-updates-rcna172846#rcrd58096" target="_blank"><h3>2024 v.s. 2020 Debate Topics - Oct. 1, 2024</h3></a>
+                    <img src="images/charts/debatetopics.png" alt="Bar chart showing the time spent talking about the top 3 topics from vice presidential debates in 2020 and 2024. In 2020 the top 3 topics were Donald Trump (14 minutes), Covid-19 (9,9 minutes) and the economy (7.2 minutes). In 2024 the top three topics where character and fitness (13.2 minutes), immigration (7.5 minutes) and abortion (7.3) minutes.">
+                </div>
+
+                <div class="elonmusk"> 
+                    <a href="https://www.nbcnews.com/tech/tech-news/elon-musk-popularity-poll-democrat-republican-election-endorsement-rcna172353" target="_blank"><h3>Elon Musk approval ratings - Sept. 25, 2024</h3></a>
+                    <img src="images/charts/elon.png" alt="Line chart showing approval ratings of Musk by political affilation since 2021. Republicans have been growing more fond of Musk while Democrats have been liking him less.">
+                </div>
+            </section>
+
+            <section class="pub">
+                <div class="publicationstext">
+                    <h2>WRITING, REPORTING & GRAPHICS</h2><hr>
+                    <a href="https://www.nbcnews.com/data-graphics/data-shows-wine-decline-consumers-spending-less-drinking-less-rcna187628" target="_blank"><h1></a>
+                        Wine sales drying up as Americans turn elsewhere
+                    </h1>
+    
+                    <p>The losses keep stacking up for the U.S. wine industry.
+    
+                    Wine sales in the U.S. last year tumbled approximately 6% from 2023, according to data from the industry data group SipSource. The drop is the latest in a long-term decline in wine demand in restaurants, bars and stores that some are calling an “existential threat” to the industry...
+                    </p>
+                </div>
+    
+                <div class="publicationsimage">
+                    <a href="https://www.nbcnews.com/data-graphics/data-shows-wine-decline-consumers-spending-less-drinking-less-rcna187628" target="_blank"><img src="images/publications/wine.webp" alt="Grapes hanging off a wine glass."></a>
+                </div>
+                </section>
+    
+                <section class="pub">
+                <div class="publicationstext">
+                    <h2>WRITING & REPORTING</h2><hr>
+                    <a href="https://www.nbcnews.com/data-graphics/christmas-tree-farms-face-new-perils-rcna184769" target="_blank"><h1>Christmas tree farms face new perils</h1></a>
+    
+                    <p>The Christmas tree industry just can’t catch a break.
+    
+                        The industry — a collection of tree farmers and sellers across the country — has only just emerged from supply shortages dating to the 2008 financial crisis. But right as they’ve started to find firmer footing, Christmas tree farms are staring down a new set of dangers, including climate change-fueled weather disasters and a shifting labor market...
+                    </p> 
+                </div>
+    
+                <div class="publicationsimage">
+                    <a href="https://www.nbcnews.com/data-graphics/data-shows-wine-decline-consumers-spending-less-drinking-less-rcna187628" target="_blank"><img src="images/publications/christmastrees.jpg" alt="Christmas tree farm"></a>
+                </div>
+            </section>
+
+            <section id="the-rest">
+                <h3>More charts and graphics!</h3>
+
+                <ul>
+                    <li><a href="https://www.nbcnews.com/news/world/paris-notre-dame-cathedral-reopening-ceremony-macron-trump-rcna183146" target="_blank">Paris' Notre Dame Cathedral rises from the ashes with grand reopening five years on from fire</a> - Dec. 7, 2024</li>
+                    <li><a href="https://www.nbcnews.com/business/economy/final-jobs-report-2024-election-expect-means-economy-rcna176775" target="_blank">Final jobs report before election likely to see hurricane impact — masking some economic gains</a> - Oct. 23, 2024</li>
+                    <li><a href="https://www.nbcnews.com/news/us-news/hurricane-helene-flood-claims-lives-tennessee-plastics-factory-rcna175122"  target="_blank">Surging floodwater and panicked prayers: How a workday at a Tennessee plastics factory turned deadly</a> - Oct. 18, 2024</li>
+                    <li><a href="https://www.nbcnews.com/health/health-news/drug-overdose-deaths-fall-6-months-straight-officials-wonder-working-rcna175888" target="_blank">Drug overdose deaths fall for 6 months straight as officials wonder what's working</a>- Oct. 18, 2024</li>
+                    <li><a href="https://www.nbcnews.com/politics/2024-election/live-blog/vice-presidential-debate-vance-walz-live-updates-rcna172846#rcrd58096" target="_blank">VP debate highlights: Walz and Vance spar over immigration, abortion and gun violence</a> - Oct. 1, 2024</li>
+                    <li><a href="https://www.nbcnews.com/business/economy/interest-rate-cut-federal-reserve-decision-how-much-rcna171453" target="_blank">Fed goes big with interest rate cut in a bid to head off an economic slowdown</a> - Sept. 18, 2024</li>
+                </ul>
+            </section>
+            
+        </main> 
+
+        <footer id="btm-footer">
+            <section id="res-contact">
+                <h2 id="numEmail">&#10041; Ash Reynolds / NBC News &#10041;</h2>
+                <div class="cinfo">
+                    <ul>
+                        <li><a href="mailto:ashreyn13@gmail.com"><img src="images/mail-icon.png" alt="Mail icon. Email me!"></a></li>
+                        <li><a href="https://www.linkedin.com/in/ash-reynolds-1608562b7/" target="_blank"><img src="images/linkin.webp" alt="LinkedIn Logo"></a></li>
+                        <li><a href="instagram.com/ashreynn" target="_blank"><img src="images/instagram-icon.png" alt="Instagram icon. Follow me! I'm private and probably won't accept the request"></a></li>
+                    </ul>
+                </div>
+            </section>
+            <menu id="ftr-menu">
+                <li><a href="resume.html">RESUME</a></li>
+                <li><a href="nbc.html">CURRENT WORK</a></li>
+                <li class="proj-button">
+                    <input type="checkbox" id="checkbox2"><label for="checkbox2">PROJECTS</label>
+                    <ul class="dropdown"> <!-- Ash Note: The projects button is now going to open a menu to my different projects -->
+                        <li><a href="nbc.html"><img src="images/nbcbutton.jpg" alt="NBC rainbow peacock logo with text that reads NBC News"></a></li>
+                        <li><a href="nsfp.html"><img src="images/nsfplogo.jpg" alt="white text on a black background that reads NSFP"></a></li>
+                        <li><a href="jd.html"><img src="images/jdbutton.jpg" alt="White text on a pink background that says Journalism + Design"></a></li>
+                        <li><a href="misc.html"><img src="images/misc-squareicon.jpg" alt="A paper airplane flying with a rainbow trail behind it over a dark blue background with the word Miscellaneous in curvey letters"></a></li>
+                        <li> <a href="publications.html"><img src="images/publications.png" alt="Document icon"></a></li>
+                        <li><a href="gallery.html"><img src="images/gallery.png" alt="Icon of two photos"></a></li>
+                </li>
+            </menu>
+        </footer>
+    </body>
+</html>

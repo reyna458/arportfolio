@@ -1,0 +1,191 @@
+body {
+    background-color: #d9d9d9;
+}
+
+#main-nav {
+    background-color: #e82d62;
+}
+
+#top-header a {
+    color: #e82d62;
+}
+
+#jdexp {
+    background-color: #e82d62;
+}
+
+#jdexp p {
+    color: white;
+    margin: 5%;
+}
+
+main section {
+    border: white;
+    border-style: double;
+    border-width: 25px;
+    border-radius: 25px;
+    background-color: #e82d62;
+    color: white;
+    margin: 1em;
+}
+
+#movienights-posters {
+    margin-left: 25%;
+    margin-bottom: 5%;
+    display: grid;
+    max-width: 50%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+#movienights-info {
+    margin: 5%;
+}
+
+#movienights-posters img:hover {
+    max-width: 400px;
+    position: absolute;
+    z-index: 100;
+}
+
+#jdm2:hover {
+    margin-left: 5%;
+}
+
+#jdm3:hover {
+    margin-left: 15%;
+}
+
+#jdm4:hover {
+    margin-left: 15%;
+}
+
+#jdm1 {
+    grid-row: 1 / span 2;
+    grid-column: 1;
+    max-width: 200px;
+}
+
+#jdm2 {
+    grid-row: 1 / span 2;
+    grid-column: 2;
+    max-width: 200px;
+}
+
+#jdm3 {
+    grid-row: 1;
+    grid-column: 3;
+    max-width: 150px;
+}
+
+#jdm4 {
+    grid-row: 2;
+    grid-column: 3;
+    max-width: 150px;
+}
+
+#posts {
+    text-align: center;
+    background-color: white;
+    border-color: #e82d62;
+}
+
+#mobile {
+    display: none;
+}
+
+#posts h2 {
+    color: #e82d62;
+}
+
+#posts p {
+    color: #e82d62;
+}
+
+#account {
+    display: none;
+}
+
+#posts-embed {
+    max-width: 50%;
+    margin-left: 10%;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+#embed1 {
+    grid-row: 2;
+    grid-column: 1;
+}
+
+#embed2 {
+    grid-row: 2;
+    grid-column: 2;
+}
+
+#embed3 {
+    grid-row: 2;
+    grid-column: 3;
+}
+
+#embed4 {
+    grid-row: 3;
+    grid-column: 1;
+}
+
+#embed5 {
+    grid-row: 3;
+    grid-column: 2;
+}
+
+#embed6 {
+    grid-row: 3;
+    grid-column: 3;
+}
+
+#res-contact {
+    background-color: #e82d62;
+}
+
+#ftr-menu {
+    background-color: #e82d62;
+}
+
+@media only screen and (max-width: 1024px) {
+    #posts-embed {
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+#jdexp {
+    display: block;
+    text-align: center;
+}
+
+#movienights {
+    display: block;
+}
+
+#movienights-posters {
+    display: block;
+}
+
+#mobile {
+    display: block;
+}
+
+#desktop {
+    display: none;
+}
+
+ #posts-embed {
+    display: none;
+ }
+ 
+ #account {
+    display: block;
+ }
+
+}

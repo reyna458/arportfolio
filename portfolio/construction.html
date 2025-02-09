@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <meta name="keywords" content="Graphic Design, Portfolio, Journalist, New School Free Press, NBC News Digital, under construction">
+        <meta name="description" content="Nothing to see here yet! This is just the under construction page for my graphic design portfolio.">
+        <title>Ash Reynolds Portfolio</title>
+        <link rel="stylesheet" href="styles/global.css">
+        <link rel="stylesheet" href="styles/construction.css">
+        <link rel="icon" type="image/x-icon" href="favicon.ico?v=2">
+    </head>
+    <body>
+        <header id="top-header">
+            <a href="index.html" id="logo" tabindex="1"><img src="images/ar-bug.png" alt="AR logo"></a>
+            <a href="index.html" id="title" tabindex="2">Ash Reynolds Portfolio</a>
+        </header>
+
+        <nav id="main-nav">
+            <menu id="topmenu">
+                <li><a href="resume.html" tabindex="3">RESUME</a></li>
+                <li><a href="nbc.html" tabindex="4">CURRENT WORK</a></li>
+                <li class="proj-button" tabindex="5">
+                    <input type="checkbox" id="checkbox"><label for="checkbox">PROJECTS</label>
+                    <ul class="dropdown"> <!-- Ash Note: The projects button is now going to open a menu to my different projects -->
+                        <li><a href="nbc.html"><img src="images/nbcbutton.jpg" alt="NBC rainbow peacock logo with text that reads NBC News"></a></li>
+                        <li><a href="nsfp.html"><img src="images/nsfplogo.jpg" alt="white text on a black background that reads NSFP"></a></li>
+                        <li><a href="jd.html"><img src="images/jdbutton.jpg" alt="White text on a pink background that says Journalism + Design"></a></li>
+                        <li><a href="misc.html"><img src="images/misc-squareicon.jpg" alt="A paper airplane flying with a rainbow trail behind it over a dark blue background with the word Miscellaneous in curvey letters"></a></li>
+                        <li> <a href="publications.html"><img src="images/publications.png" alt="Document icon"></a></li>
+                        <li><a href="gallery.html"><img src="images/gallery.png" alt="Icon of two photos"></a></li>
+                    </ul>
+                </li>
+            </menu>
+        </nav>
+
+        <main>
+            <h1>Nothing to see here... yet!</h1>
+
+            <p>Sorry! My website is still under construction. You should probably let these people get back to their dance party. Kind of rude to intrude...</p>
+
+            <div id="home-button">
+                <a href="index.html" id="home"><h2>Take me home!</h2></a>
+            </div>
+
+            <div id="image">
+                <img src="images/ppldancing.png" alt="Illustration of colorful cartoon people dancing underneath a disco ball with music notes floating through the air. They are having a great time. You're jealous of how much fun they're having.">
+            </div>
+
+            <!-- This script gives makes some lights flash like a rave lol  -->
+            <script>
+                const image = document.getElementById('image');
+
+                console.log(image)
+
+                image.addEventListener('mouseover', function() {
+                if(image) image.classList.add('rave');
+                });
+                
+                image.addEventListener('mouseout', function() {
+                if(image) image.classList.remove('rave');});
+            </script>
+        </main>
+
+        <footer id="index-footer">
+            <menu id="ftr-menu">
+                <li><a href="resume.html">RESUME</a></li>
+                <li><a href="nbc.html">CURRENT WORK</a></li>
+                <li class="proj-button">
+                    <input type="checkbox" id="checkbox2"><label for="checkbox2">PROJECTS</label>
+                    <ul class="dropdown"> <!-- Ash Note: The projects button is now going to open a menu to my different projects -->
+                        <li><a href="nbc.html"><img src="images/nbcbutton.jpg" alt="NBC rainbow peacock logo with text that reads NBC News"></a></li>
+                        <li><a href="nsfp.html"><img src="images/nsfplogo.jpg" alt="white text on a black background that reads NSFP"></a></li>
+                        <li><a href="jd.html"><img src="images/jdbutton.jpg" alt="White text on a pink background that says Journalism + Design"></a></li>
+                        <li><a href="misc.html"><img src="images/misc-squareicon.jpg" alt="A paper airplane flying with a rainbow trail behind it over a dark blue background with the word Miscellaneous in curvey letters"></a></li>
+                        <li> <a href="publications.html"><img src="images/publications.png" alt="Document icon"></a></li>
+                        <li><a href="gallery.html"><img src="images/gallery.png" alt="Icon of two photos"></a></li>
+                </li>
+            </menu>
+        </footer>
+    </body>
+</html>

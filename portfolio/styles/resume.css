@@ -1,0 +1,109 @@
+#resume {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+}
+
+#resume section {
+    border: white;
+    border-style: double;
+    border-width: 25px;
+    border-radius: 25px;
+    background-color: #819389;
+    margin: 2.5%;
+}
+
+#resume section:hover {
+    border-color: black;
+}
+
+#resume dt {
+    color: white;
+    font-family: 'Geologica', sans-serif;
+    font-weight: bold;
+    margin: 2.5%;
+    font-size: 125%;
+}
+
+#resume dd {
+    color: white;
+    font-family: 'Helvetica', sans-serif;
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+    margin-right: 2.5%;
+    margin-left: 2em;
+}
+
+/* experience */
+
+#exp {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+/* projects */
+
+#res-projects {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+/* skills */
+
+#skills {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+#skills-list {
+    color: white;
+    font-family: 'Helvetica', sans-serif;
+    padding-inline-start: 40px;
+}
+
+/* links */
+
+#links {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+#links li {
+    color: white;
+}
+
+/* awards */
+#awards {
+    grid-row: 3;
+    grid-column: 1;
+}
+
+/* doc link*/
+
+#doc {
+    grid-row: 3;
+    grid-column: 2;
+}
+
+#doc a {
+    margin: 2.5%;
+}
+
+#doc sub {
+    color: white;
+    font-size: smaller;
+    margin: 2.5%;
+}
+
+#numEmail {
+    max-width: 80%;
+}
+@media only screen and (max-width: 1024px) {
+    #resume {
+        display: block;
+    }
+
+    #skills-list {
+        padding-inline-start: 40px;
+    }   
+}

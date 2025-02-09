@@ -1,0 +1,159 @@
+
+body {
+    background: rgb(169,184,231);
+background: linear-gradient(185deg, rgba(169,184,231,1) 0%, rgba(35,40,56,1) 50%);
+}
+
+img {
+    max-width: 100px;
+}
+
+#main-nav {
+    background-color: white;
+    border-color: #232838;
+}
+
+#main-nav a {
+    color: black;
+}
+
+#main-nav label {
+    color: black;
+}
+
+#top-header a {
+    color: white;
+}
+
+a {
+    color: black;
+    text-decoration: underline;
+}
+
+a:visited {
+    color: black;
+}
+
+section {
+    background-color: white;
+    border: double #232838 25px;
+    border-radius: 25px;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+}
+
+#miscexp {
+    border-color: white;
+    background-color: #232838;
+}
+
+#miscexp:hover {
+    border-color: #232838;
+}
+
+#miscexp p {
+    color: white;
+}
+
+#book {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+#bookinfo {
+    grid-row: 1;
+    grid-column: 2;
+    margin-top: 15%;
+}
+
+#bookphoto {
+    grid-row: 1;
+    grid-column: 1;
+    margin-left: 25%;
+}
+
+#bookphoto img {
+    max-width: 75%;
+    margin: 2.5%;
+    border: black 5px double;
+}
+
+#mercurys {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+#mercurysinfo {
+    grid-column: 1;
+    grid-row: 1;
+    margin-top: 15%;
+    margin-left: 2.5%;
+}
+
+#mercurysphoto {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+#mercurysphoto img {
+    max-width: 100%;
+}
+
+#seams {
+    display: block;
+}
+
+#seamsinfo {
+    margin-left: 2.5%;
+}
+
+#seamsphotos {
+    text-align: center;
+    margin-bottom: 2.5%;
+}
+
+#seamsphotos img {
+    max-width: 250px;
+}
+
+#hurricane {
+    display: block;
+}
+
+#hurricaneinfo {
+    margin-left: 2.5%;
+}
+
+#hurricaneposters {
+    margin: 2.5%;
+}
+
+#hurricaneposters img {
+    max-width: 33%
+}
+
+#res-contact {
+    background-color: white;
+    border-color: #232838;
+}
+
+#res-contact h2 {
+    color: black;
+}
+
+#ftr-menu {
+    background-color: white;
+    border-color: #232838;
+}
+
+#ftr-menu a {
+    color: black;
+}
+
+#ftr-menu label {
+    color: black;
+}

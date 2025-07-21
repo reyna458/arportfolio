@@ -39,7 +39,7 @@ header {
 
 header img {
     max-width: 100px;
-    width: 25%;
+    width: 50%;
 }
 
 p {
@@ -189,6 +189,7 @@ h3:hover {
     grid-template-rows: 1fr;
     margin: 1em;
     margin-left: 0;
+    margin-right: 0;
     height: auto;
     padding: 1%;
     border-radius: 25px;
@@ -450,7 +451,7 @@ dt {
     max-width: 100px;
     opacity: .5;
     position: fixed;
-    top: 80vh;    /* distance from the top */
+    top: 70vh;    /* distance from the top */
     left: 30px;   /* distance from the left */
     width: 20%; /* adjust size as needed */
     height: 20%;
@@ -473,6 +474,7 @@ dt {
     width: 100%;
     justify-self: center;
     margin-bottom: 2em;
+    padding: 1% !important;
     transition: width 1s, height 1s;
 }
 
@@ -810,7 +812,7 @@ dt {
 .a3poster-div {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 2fr 5fr;
+    grid-template-rows: 1fr 5fr;
     z-index: 900;
     background-color: #232838;
     border-radius: 25px;
@@ -862,7 +864,9 @@ dt {
 
 @media (max-width: 750px) {
     
-
+header img {
+    width: 70%;
+}
 #aboutme {
     display: block;
 }

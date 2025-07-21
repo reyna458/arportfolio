@@ -11,7 +11,7 @@ function setupScrollListener() {
     let scrollScore = $(window).scrollTop();
     console.log(scrollScore);
     if (scrollScore > 100) {
-      $('.x-button').css("opacity", "1");
+      $('.x-button').css("opacity", ".9");
     } else {
       $('.x-button').css("opacity", ".5");
     }
@@ -108,6 +108,7 @@ $(document).ready(function () {
     $(this).find('.x-button').css("display", "flex");
 
     $('.island-button').css("height", "0");
+    $('.island-button').css("padding", "0")
     // $('.island-button.active').css("height", "50%");
     // $('.island-button.active').css('width', "25%")
 
@@ -147,6 +148,7 @@ $('.island-button').on("click", function (e) {
         island.removeClass("active");
         $(this).hide();
         $('.island-button').css("height", islandResize)
+        $('.island-button').css("padding", "1%")
         $('.add-content').css('display', 'none')
 });
 
@@ -156,6 +158,7 @@ $('.island-button').on("click", function (e) {
         island.removeClass("active");
         $('.x-button').hide();
         $('.island-button').css("height", islandResize)
+        $('.island-button').css("padding", "1%")
         $('.add-content').css('display', 'none')
 });
 

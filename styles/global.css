@@ -906,7 +906,9 @@ header img {
     display: block;
 }
 
-
+.photo-div {
+    display: block;
+}
 
 
     .publication-div {

@@ -13,6 +13,7 @@ html, body {
   font-family: "Geologica", sans-serif;
   color: white;
   padding-bottom: 3em;
+  justify-items: center;
 }
 
 a {

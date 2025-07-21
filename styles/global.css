@@ -188,7 +188,9 @@ h3:hover {
     grid-template-columns: 2fr 3fr;
     grid-template-rows: 1fr;
     margin: 1em;
-    height: 100%;
+    margin-left: 0;
+    height: auto;
+    padding: 1%;
     border-radius: 25px;
     overflow: hidden;
     width: 95%;
@@ -467,7 +469,7 @@ dt {
     overflow-x: visible;
     overflow-y: visible;
     position: relative;
-    height: 100% !important;
+    height: auto !important;
     width: 100%;
     justify-self: center;
     margin-bottom: 2em;

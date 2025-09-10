@@ -49,11 +49,11 @@ p {
 /* ABOUT ME */
 
 #aboutme {
-    margin: 1em;
+/*     margin: 1em; */
     margin-top: 2em;
     width: 80%;
     background-color: #819389;
-    justify-self: center;
+/*     justify-self: center; */
     border: white 10px solid;
     border-radius: 25px;
     display: grid;
@@ -1042,3 +1042,4 @@ header img {
         width: 100%;
     }
 }
+

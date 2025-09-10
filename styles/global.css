@@ -31,6 +31,10 @@ html {
     background: linear-gradient(0deg, rgba(129,147,137,1) 0%, rgba(129,147,137,1) 7%, rgba(217,235,255,1) 62%, rgba(215,222,230,1) 100%);
 }
 
+section {
+  margin: 2em auto 1em;
+}
+
 header {
     max-height: 100px;
     text-align: center;
@@ -1042,4 +1046,5 @@ header img {
         width: 100%;
     }
 }
+
 

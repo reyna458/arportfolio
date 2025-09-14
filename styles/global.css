@@ -54,7 +54,7 @@ p {
 
 #aboutme {
 /*     margin: 1em; */
-    margin-top: 2em;
+    margin: 2em auto 1em;
     width: 80%;
     background-color: #819389;
 /*     justify-self: center; */
@@ -130,7 +130,7 @@ h2 {
     grid-template-rows: 1fr;
     grid-template-columns: 1fr 1fr 1fr;
     width: 80%;
-    margin: 1em;
+    margin: 2em auto 1em;
 }
 
 h3:hover {
@@ -1046,5 +1046,6 @@ header img {
         width: 100%;
     }
 }
+
 
 

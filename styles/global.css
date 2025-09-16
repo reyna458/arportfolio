@@ -967,7 +967,7 @@ header img {
 @media (max-width: 500px) {
 
     #aboutme {
-        margin: 0;
+        margin: 2em auto 1em;
         padding: 2.5%;
     }
     body {
@@ -1046,6 +1046,7 @@ header img {
         width: 100%;
     }
 }
+
 
 
 

@@ -11,224 +11,70 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="styles/global.css">
+         <link rel="stylesheet" href="styles/mediaqueries.css">
          <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
         <link rel="icon" href="/favicon.ico" type="image/x-icon">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <meta name="HandheldFriendly" content="true">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.8.0/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.8.0/addons/p5.sound.min.js"></script>
     </head>
     <body>
-       <header>
-            <img src="images/ar-bug.png" alt="AR Logo">
-       </header>
-
-       <section id="aboutme">
-            <div id="aboutme-text">
-                <h1>Ash Reynolds</h1>
-                <h2 id="whatido">Journalist, Designer, Creative Director</h2>
-              
-
-                <p id="aboutme-copy">If you're here, then you're probably interested in my work! My name is Ash Reynolds and I'm a student at The New School studying journalism, publishing, and communication design. Assembled here are some of my favorite projects I've worked on over the years. Feel free to click over to the 'resume' tab if you're looking for all of my work experience magically condensed into one page. Have fun clicking around!</p>
-            </div>
-
-            <div id="aboutme-image">
-                <img src="images/my-photo.JPG">
-            </div>
-       </section>
-
-       <section id="buttons">
-            <h3 id="projects" class="tab-button selected">PROJECTS</h3>
-            <h3 id="resume" class="tab-button unselected">RESUME</h3>
-            <h3 id="contact" class="tab-button unselected">CONTACT</h3>
-       </section>
-
-       <section id="dynamic">
-            <section id="project-buttons">
-
-                <div id="nbc-button" class="island-button">
-                    <img src="images/x-icon.svg" class="x-button">
-                    <div class="button-text">
-                        <h4>Data Graphics Intern</h4>
-                        <h5>NBC News</h5>
-                        <h6>Sept. 2024 - April 2025</h6>
-                        <p>From September 2024 to April 2025, I worked as an intern for the Data Graphics team at NBC News. In my time, I took projects from pitch to publication, created graphics for a wide variety of stories, and upkept the weekly News Quiz. I developed skills in Datawrapper, Google Sheets, Javascript, Adobe Suite, and more. I've assembled some highlights of my time there on this page!</p>
+        <style type="text/css">
+        #mailto:before {
+            /* content: attr(data-website) "\0040" attr(data-user); */
+            unicode-bidi: bidi-override;
+            direction: rtl;
+        }
+    </style>
+        <main>
+            <header>
+                    <div id="decor" class="colorable"></div>
+                    <h1><span class='firstname'>Ash</span><span class='surname'>Reynolds</span></h1>
+                    <h2>Journalist, Designer, Creative Director</h2>
+                    <p>Hello! My name is Ash and I'm a journalist and designer based in New York City. I graduated from The New School in 2025 with a bachelor's degree in Journalism + Design, with a minor in Communication Design. I will be graduating with a master's degree in Creative Publishing and Critical Journalism from The New School for Social Research in spring 2026. I worked as an intern for the NBC News Data Graphics Team and am now Creative Director for The New School Free Press. I also have background in social media and marketing, having worked as the Head of Socials for NSFP and currently working as a social media assistant for the Journalism + Design department. If you're here, you're probably interested in my work, so please have fun clicking around! I've assembled everything here into one page, sorted by skill. Feel free to contact me via email or check out my LinkedIn!</p>
+                    <div class="links">
+                        <a href="mailto:ashreyn13@gmail.com" id="mailto"><img src="images/mail-icon.svg" id='img-click' alt="mail icon"><p>ashreyn13@gmail.com</p></a>
+                        <a href="https://www.linkedin.com/in/ash-reynolds-1608562b7?original_referer=https%3A%2F%2Fwww.google.com%2F" target="_blank" id="linkedin">LinkedIn</a>
+                        <a href="https://docs.google.com/document/d/1oAhDBfEkAPVyIvdOTtLbKkUXzEHYHSqA0c5RM0_KrCk/edit?tab=t.0" target="_blank">Resume</a>
                     </div>
-                    <div class="button-image">
-                        <img src="images/nbcbutton.jpg" alt="NBC Peacock logo">
-                    </div>
-                </div>
+            </header>
 
-               
-
-
-                <div id="publications-button" class="island-button">
-                      <img src="images/x-icon.svg" class="x-button">
-                    <div class="button-text">
-                        <h4>Publications</h4>
-                        <h5>Writing + Graphics</h5>
-                        <p>A collection of all my published writing and graphics.</p>
-                    </div>
-                    <div class="button-image">
-                        <img src="images/publications.svg" id="publications-image">
-                    </div>
-                   
-                </div>
-
-                
-                <div id="nsfp-button" class="island-button">
-                      <img src="images/x-icon.svg" class="x-button">
-                    <div class="button-text">
-                        <h4>Creative Director</h4>
-                        <h5>New School Free Press</h5>
-                        <h6>Jan. 2024 - Present</h6>
-                        <p>In my time at The New School Free Press, I've moved up from Social Media Editor to Head of Social Media and now to Creative Director. Have a look at some of my favorite projects from my time at NSFP!</p>
-                    </div>
-                    <div class="button-image">
-                        <img src="images/nsfplogo.png" alt="NSFP Logo">
-                    </div>
-                
-                </div>
-
-                <div id="webdev-button" class="island-button">
-                      <img src="images/x-icon.svg" class="x-button">
-                    <div class="button-text">
-                        <h4>Web Development</h4>
-                        <h5>HTML/CSS + Javascript</h5>
-                        <p>Here I've collected some of my favorite web development projects that I created using HTML, CSS and Javascript. One I couldn't include? This website... but you're already using that!</p>
-                    </div>
-                    <div class="button-image">
-                        <img src="images/webdev.svg" id="webdev-image">
-                    </div>
-                 
-                </div>
-
-                 <div id="jd-button" class="island-button">
-                      <img src="images/x-icon.svg" class="x-button">
-                    <div class="button-text">
-                        <h4>Social Media Assistant</h4>
-                        <h5>Journalism + Design</h5>
-                        <h6>Nov. 2023 - Present</h6>
-                        <p>My favorite posts and content from my time as a Social Media Assistant for the Journalism + Design program at The New School.</p>
-                    </div>
-                    <div class="button-image">
-                        <img src="images/jdbutton.jpg">
-                    </div>
-                 
-                </div>
-
-                <div id="misc-button" class="island-button">
-                      <img src="images/x-icon.svg" class="x-button">
-                    <div class="button-text">
-                        <h4>Miscellaneous</h4>
-                        <h5>Design projects</h5>
-                        <h6>A collection of miscellaenous design work.</h6>
-                        <p>Who knows what you might find here...?</p>
-                    </div>
-                    <div class="button-image">
-                        <img src="images/misc-squareicon.jpg">
+            <section id="listtop">
+                    <div id="buttons">
+                        <button id="data-journalism" class="selected">DATA JOURNALISM</button>
+                        <button id="design">GRAPHIC DESIGN</button>
+                        <button id="web-dev">WEB DEVELOPMENT</button>
+                        <button id="marketing">MARKETING</button>
                     </div>
 
-                    
-                    
+                    <div id="explainer">
+                        <p id="explainer-content">Here is a collection of my work so far as a data journalist! I've written data stories for NBC News and The New School Free Press, all of which are laid out here for your reading pleasure.</p>
+                    </div>
+            </section>   
 
-           
-                </div>
+            <section id="content">
 
-                <div class="add-content">
-                       
-                </div>
-
-                </div>
             </section>
 
-            <div id="resume-info">
-                <div id="experience">
-                    <h2>Experience</h2>
-
-                    <dl>
-                        <dt class="top-dt">Data Graphics Intern - NBC News</dt>
-                        <dd>From September 2024 to April 2025, I worked as an intern for the Data Graphics team at NBC News. In my time, I took projects from pitch to publication, created graphics for a wide variety of stories, and upkept the weekly News Quiz. I developed skills in Datawrapper, Google Sheets, Javascript, Adobe Suite, and more.</dd>
-
-                        <dt>Social Media Assistant - Journalism + Design</dt>
-                        <dd>Since November 2023, I have been working as a student assistant to help grow the Journalism + Design social media presence and general communications systems. I create several posts a week, plan events and maintain a connection with our audience comprised of students, faculty and alumni.</dd>
-
-                        <dt>Marketing Intern - Seams Better</dt>
-                        <dd>From June 2024 to August 2024, I Worked as a marketing intern for <a href="https://seamsbetter.com/" target="_blank">Seams Better</a>, a fashion company focused on ethical labor practices and sustainability. As an intern, I created graphics, video content, kept up a weekly newsletter, and communicated with brand partners.</dd>
-                    </dl>
-                </div>
-
-                <div id="projects-resume">
-                    <h2>Projects</h2>
-
-                    <dl>
-                        <dt class="top-dt">Creative Director, Head of Social Media, Reporter, Visuals - The New School Free Press</dt>
-                        <dd>In my time at The New School Free Press, I've worn <i>many</i> different hats. As Creative Director of Print and Web, I am managing the paper's brand identity and communication through our social media, print issues and website. As Head of Socials, I managed a team of editors to maintain audience engagement and stick to a consistent posting schedule. I have also created several different visuals and reported stories for the Free Press.</dd>
-
-                        <dt>Head Editor, Marketing Manager - Love Letters Magazine</dt>
-                        <dd>From 2020 - 2023, I worked on an online literary magazine called Love Letters. I began as the editor of the prose section and moved up to Marketing Manager where I maintained the website, created layouts for digital issues and managed relationships with an audience and other magazines. For the last year of Love Letters, I became Head Editor, managing a team of people from across the globe to publish our issues.</dd>
-                    </dl>
-                </div>
-
-                <div id="skills">
-                    <h2>Skills</h2>
-
-                    <ul>
-                        <li>Adobe Suite</li>
-                        <li>HTML/CSS</li>
-                        <li>Datawrapper</li>
-                        <li>Git / GitHub</li>
-                        <li>Data visualization</li>
-                        <li>Marketing & social media experience</li>
-                        <li>Writing & reporting</li>
-                        <li>Google Sheets</li>
-                        <li>Illustration</li>   
-                    <ul>
-                </div>
-
-                <div id="links">
-                    <h2>Links</h2>
-
-                    <ul>
-                        <li><a href="https://www.nbcnews.com/data-graphics/people-disabilities-are-disproportionately-impacted-natural-disasters-rcna192577" target="_blank">Disability amid disaster: People with disabilities are disproportionately impacted by natural disasters</a> - NBC News</li>
-                        <li><a href="https://www.nbcnews.com/data-graphics/trump-tariffs-car-insurance-bill-price-auto-repair-cost-rcna201392" target="_blank">Even drivers who aren’t buying cars will pay for tariffs soon</a> - NBC News</li>
-                        <li><a href="https://www.nbcnews.com/data-graphics/data-shows-wine-decline-consumers-spending-less-drinking-less-rcna187628" target="_blank">Wine sales drying up as Americans turn elsewhere</a> - NBC News</li>
-                        <li><a href="https://www.nbcnews.com/data-graphics/christmas-tree-farms-face-new-perils-rcna184769" target="_blank">Christmas tree farms face new perils</a> - NBC News</li>
-                        <li><a href="https://www.newschoolfreepress.com/2024/04/15/the-new-york-city-subway-remains-largely-inaccessible-to-the-disabled-community/" target="_blank">The New York City subway remains largely inaccessible to the disabled community</a> - New School Free Press</li>
-                        <li><a href="https://www.instagram.com/journalismdesign/" target="_blank">J+D Instagram</a></li>
-                        <li><a href="https://www.instagram.com/nsfreepress/" target="_blank">New School Free Press Instagram</a></li>
-                        <li><a href="https://www.instagram.com/seamsbetter/" target="_blank">Seams Better Instagram</a> - Ran from June - August 2024</li>
-                    </ul>
-                </div>
-
-                <div id="awards">
-                    <h2>Awards</h2>
-                    <dl>
-                        <dt class="top-dt">Eugene Lang College Dean's List</dt>
-                        <dd>Awarded annually to students with a 3.7 GPA or higher.</dd>
-
-                        <dt>Special Honors: Student Achievement - Fifth Avenue Theater Awards</dt>
-                        <dd>Award for outstanding work as Marketing Manager.</dd>
-                    </dl>
-                </div>
-
-                <div id="google-doc">
-                    <h2><a href="https://docs.google.com/document/d/1oAhDBfEkAPVyIvdOTtLbKkUXzEHYHSqA0c5RM0_KrCk/edit?usp=sharing" target="_blank">Click here for the living document of my resume!</a></h2>
-                    <p>In case you think my website is ugly :(</p>
-                </div>
-            </div>
-
-            <div id="contact-info">
-                <h1 id="contact-name">Ash Reynolds</h1>
+         
+    </main>
+       <footer class="colorable">
+                <h1>Ash Reynolds</h1>
                 <h2>Journalist, Designer, Creative Director</h2>
-                <h3>Shoot me an email!</h3>
-                <h4><a href="ashreyn13@gmail.com">ashreyn13@gmail.com</h4>
-                <h5><a href="https://www.linkedin.com/in/ash-reynolds-1608562b7?original_referer=https%3A%2F%2Fwww.google.com%2F">LinkedIn</h5>
-            </div>
-        </section>
-         <script src="scripts/variables.js" async defer></script>
-            <script src="scripts/menu-module.js" async defer></script>
-          
+                <div class="footer-links">
+                        <a href="mailto:ashreyn13@gmail.com" id="mailto"><p>ashreyn13@gmail.com</p></a>
+                        <a href="https://www.linkedin.com/in/ash-reynolds-1608562b7?original_referer=https%3A%2F%2Fwww.google.com%2F" target="_blank" id="linkedin">LinkedIn</a>
+                        <a href="https://docs.google.com/document/d/1oAhDBfEkAPVyIvdOTtLbKkUXzEHYHSqA0c5RM0_KrCk/edit?tab=t.0" target="_blank">Resume</a>
+                    </div>
+                <h4 id="footername">Back to top</h4>
+            </footer>
     </body>
+
+    <script src="scripts/content-fill.js" async defer></script>
+      <script src="scripts/sketch.js"></script>
 </html>
+
 
 

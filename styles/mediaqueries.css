@@ -1,0 +1,58 @@
+@media screen and (max-width: 530px) {
+
+
+    main {
+        margin: 25% 10% 10% 10%;
+    }
+
+    h1 {
+        text-decoration: underline;
+        text-decoration-color: #7FC595;
+        margin-left: 0 !important;
+    }
+
+    header {
+        display: block;
+    }
+
+    #mailto {
+        margin-left: 2.5%;
+    }
+
+    #linkedin {
+        margin-left: 5%;
+    }
+
+    .story {
+        display: block;
+    }
+
+    .images {
+        display: block;
+    }
+
+    a {
+        text-decoration: underline;
+    }
+
+    #buttons {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        padding: 2%;
+    }
+
+    #buttons button {
+        margin: 5%;
+        border: black 1px solid;
+    }
+
+    #buttons button:hover {
+        color: black;
+    }
+
+    .selected {
+        background-color: #7FC595 !important; 
+        color: white !important;
+    }
+}

@@ -3,6 +3,11 @@
 
     main {
         margin: 25% 10% 10% 10%;
+        justify-items: center;
+    }
+
+    body {
+        justify-self: center;
     }
 
     h1 {
@@ -21,6 +26,22 @@
 
     #linkedin {
         margin-left: 5%;
+    }
+
+    .links {
+        font-size: 12px;
+    }
+
+    .footer-links {
+        margin: 0 5% 0 5%;
+    }
+
+    footer {
+        padding: 5% 0 25% 0
+    }
+
+    footer h2 {
+        font-size: 90%;
     }
 
     .story {
